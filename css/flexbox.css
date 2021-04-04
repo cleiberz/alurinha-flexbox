@@ -1,5 +1,33 @@
-.cabecalhoPrincipal .container {
+/* Para usar o flexbox deve sempre lembrar de ver quem é a classe pai.  Há uma relação direta entre a classe pai e as filhas*/
+
+.cabecalhoPrincipal .container { 
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav{
+    display: flex;
+    /*Foi aplicado um margin-left para colocar um espaço entre os elementos [ver style.css].  Se fosse querer aplicar um justify-content não seria possível, pois não há espaço em branco disponível conforme
+    aula apresentada;*/
+}
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
 }
